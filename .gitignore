@@ -1,0 +1,36 @@
+# .gitignore
+# =======================
+
+# Ignorar el .env con variables sensibles
+.env
+
+# Ignorar carpetas de compilación de Rust
+/target/
+
+# Ignorar archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar configuraciones específicas del editor
+*.vscode/
+.idea/
+*.swp
+
+# Ignorar backups o archivos temporales
+*.log
+*.tmp
+
+# Ignorar binarios o ejecutables
+*.out
+*.wasm
+
+# Ignorar dependencias descargadas de CosmWasm (opcional si usas wasm artifacts)
+artifacts/
+cache/
+
+# Ignorar scripts generados o de pruebas
+scripts/*.log
+scripts/*.tmp
+
+# Otros
+node_modules/
