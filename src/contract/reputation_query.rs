@@ -116,6 +116,7 @@ pub fn query_user_reputation(
         })
         .map(|item| {
             let (_, review_id) = item?;
+            let review_id: String = review_id.to_string();
             REVIEWS.load(deps.storage, review_id)
         })
         .collect::<StdResult<Vec<Review>>>()?;
