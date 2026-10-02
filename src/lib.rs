@@ -1,7 +1,5 @@
-pub mod contract;
-pub mod error;
-pub mod helpers;
-pub mod state;
-pub mod msg;
-pub mod schema;
-pub mod mock;
+#![no_std]
+extern crate alloc;
+
+mod marketplace_escrow;
+pub use marketplace_escrow::*;
